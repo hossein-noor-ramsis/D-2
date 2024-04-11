@@ -6,11 +6,6 @@
   src: url(../Font/name.ttf) format(ttf);
   src: url(../Font/name.eot) format(eot), url(../Font/name.woff) format(woff), url(../Font/name.woff2) format(woff2);
 }
-@media screen and (min-width: 2000px) {
-  html {
-    margin: auto;
-  }
-}
 body {
   min-width: 320px;
 }
@@ -167,6 +162,8 @@ nav .navbar-brand a {
   }
   .hero .left .img-border {
     position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
     display: block;
     width: 350px;
     height: 500px;
@@ -174,6 +171,59 @@ nav .navbar-brand a {
     border-radius: 0.5rem;
     top: 2rem;
     left: 2rem;
+  }
+}
+/* === end of function === */
+/* === start of variable === */
+/* === end of variable === */
+/* === start of section === */
+.about {
+  padding: 3rem;
+}
+.about .line {
+  background-color: #2f3e46;
+  height: 0.2rem;
+  width: 6rem;
+  margin-bottom: 1rem;
+}
+.about .border-parent {
+  position: relative;
+  width: 224px;
+  height: 382px;
+}
+.about .img-border {
+  position: absolute;
+  display: block;
+  width: 192px;
+  height: 350px;
+  border: 0.25rem solid #354f52;
+  border-radius: 0.5rem;
+  top: 2rem;
+  left: 2rem;
+}
+.about img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+  width: 192px;
+  height: 350px;
+  margin-right: 3rem;
+  z-index: 2;
+}
+
+/* === end of section === */
+/* === start of function === */
+@media screen and (max-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* === end of function === */

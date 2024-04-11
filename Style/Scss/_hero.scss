@@ -83,6 +83,7 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
 
         .left .img-border {
             position: absolute;
+            object-fit: cover;
             display: block;
             width: 350px;
             height: 500px;
