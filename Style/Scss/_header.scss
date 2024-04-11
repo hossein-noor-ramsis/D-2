@@ -1,0 +1,109 @@
+/* === start of variable === */
+$clr-primary-1: #2f3e46;
+$clr-primary-2: #354f52;
+$clr-primary-3: #52796f;
+$clr-primary-4: #84a98c;
+$clr-primary-5: #cad2c5;
+$clr-grey-1:#102a42;
+$clr-grey-2: #617d98;
+$clr-grey-3: rgba(241, 245, 248);
+$clr-white: #ffffff;
+$transition: all 0.3s linear;
+$redius: 0.5rem;
+$shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+/* === end of variable === */
+/* === start of header === */
+header {
+    .sidebar-links {
+        text-align: center;
+        font-size: 1.5rem;
+        color: $clr-primary-2;
+    }
+
+    .nav-link:hover, .sidebar-icons .bi:hover {
+        color: $clr-primary-4;
+    }
+}
+
+nav {
+    & {
+        position: absolute;
+        width: 100%;
+        top: 0rem;
+        left: 0%;
+        right: 0%;
+        background-color: $clr-primary-5;
+        transition: $transition;
+        z-index: 5;
+    }
+
+    .nav-btn .bi::before {
+        font-size: 2rem;
+        font-weight: bold !important;
+    }
+
+    .nav-btn:active {
+        color: $clr-primary-1;
+    }
+
+    .navbar-brand a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+.nav-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0rem;
+    left: 0%;
+    right: 0%;
+    box-shadow: $shadow-light;
+    background: $clr-white;
+}
+
+.sidebar {
+    & {
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        width: 100%;
+        height: 100%;
+        background: $clr-primary-5;
+        z-index: 5;
+        transform: translateY(-100%);
+        transition: $transition;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: transparent;
+        color: #bb2525;
+        font-size: 2.5rem;
+        border: none;
+        transition: $transition;
+    }
+
+    .close-btn:hover {
+        color: #e66b6b;
+    }
+
+    .sidebar-icons .bi {
+        font-size: 1.5rem;
+        color: black;
+        transition: $transition;
+    }
+}
+
+.sidebar-show {
+    transform: translateX(0%);
+}
+/* === end of header === */
+/* === start of function === */
+
+/* === end of function === */ 

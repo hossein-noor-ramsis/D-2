@@ -1,0 +1,97 @@
+/* === start of variable === */
+$clr-primary-1: #2f3e46;
+$clr-primary-2: #354f52;
+$clr-primary-3: #52796f;
+$clr-primary-4: #84a98c;
+$clr-primary-5: #cad2c5;
+$clr-grey-1:#102a42;
+$clr-grey-2: #617d98;
+$clr-grey-3: rgba(241, 245, 248);
+$clr-white: #ffffff;
+$transition: all 0.3s linear;
+$redius: 0.5rem;
+$shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+/* === end of variable === */
+/* === start of section === */
+.hero {
+    & {
+        padding: 3rem;
+        padding-top: 6rem;
+        height: 100vh;
+        background-color: $clr-primary-5;
+    }
+
+    .line {
+        background-color: $clr-primary-1;
+        height: 0.2rem;
+        width: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    .icons {
+        max-width: 360px;
+    }
+
+    .icons .bi {
+        font-size: 1.5rem;
+        color: black;
+        transition: $transition;
+    }
+
+    .icons .bi:hover {
+        color: $clr-primary-4;
+    }
+
+    .btn {
+        color: $clr-white;
+        background-color: $clr-primary-1;
+    }
+}
+/* === end of section === */
+/* === start of function === */
+@media screen and (min-width: 768px) {
+    .hero {
+        & {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+
+        .left {
+            text-align: center;
+            margin: 0rem 2rem;
+        }
+
+        .left img {
+            position: relative;
+            border-radius: 0.5rem;
+            width: 350px;
+            height: 500px;
+            z-index: 2;
+        }
+
+        .border-parent {
+            position: relative;
+            width: 350px;
+            height: 500px;
+        }
+
+        .left .img-border {
+            position: absolute;
+            display: block;
+            width: 350px;
+            height: 500px;
+            border: 0.25rem solid $clr-primary-2;
+            border-radius: 0.5rem;
+            top: 2rem;
+            left: 2rem;
+            // z-index: 2;
+        }
+    }
+}
+/* === end of function === */ 

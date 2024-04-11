@@ -1,0 +1,39 @@
+/* === start of variable === */
+
+/* === end of variable === */
+/* === start of base === */
+@font-face {
+    font-family: name;
+    src: url(../Font/name.ttf) format(ttf);
+    src: url(../Font/name.eot) format(eot), url(../Font/name.woff) format(woff),
+        url(../Font/name.woff2) format(woff2);
+}
+
+@media screen and (min-width: 2000px) {
+    // html {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+    html {
+        margin: auto;
+    }
+}
+
+body {
+    // display: grid;
+    // grid-template-rows: repeat(3, auto);
+    // max-width: 2000px;
+    min-width: 320px;
+    // box-sizing: border-box;
+    // box-sizing: content-box;
+}
+
+:root {
+    direction: ltr;
+    font-family: name;
+    font-size: 16px;
+}
+/* === end of base === */
+/* === start of function === */
+
+/* === end of function === */
