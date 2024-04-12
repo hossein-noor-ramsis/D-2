@@ -22,13 +22,6 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
         background-color: $clr-primary-5;
     }
 
-    .line {
-        background-color: $clr-primary-1;
-        height: 0.2rem;
-        width: 6rem;
-        margin-bottom: 1rem;
-    }
-
     h1 {
         margin-bottom: 1rem;
     }
@@ -50,6 +43,11 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
     .btn {
         color: $clr-white;
         background-color: $clr-primary-1;
+    }
+
+    .btn:hover {
+        background-color: $clr-primary-3;
+        color: $clr-white;
     }
 }
 /* === end of section === */

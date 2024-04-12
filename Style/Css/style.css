@@ -6,14 +6,21 @@
   src: url(../Font/name.ttf) format(ttf);
   src: url(../Font/name.eot) format(eot), url(../Font/name.woff) format(woff), url(../Font/name.woff2) format(woff2);
 }
-body {
-  min-width: 320px;
-}
-
 :root {
   direction: ltr;
   font-family: name;
   font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+}
+
+.line {
+  background-color: #354f52;
+  height: 0.2rem;
+  width: 6rem;
+  margin-bottom: 1rem;
 }
 
 /* === end of base === */
@@ -111,12 +118,6 @@ nav .navbar-brand a {
   height: 100vh;
   background-color: #cad2c5;
 }
-.hero .line {
-  background-color: #2f3e46;
-  height: 0.2rem;
-  width: 6rem;
-  margin-bottom: 1rem;
-}
 .hero h1 {
   margin-bottom: 1rem;
 }
@@ -134,6 +135,10 @@ nav .navbar-brand a {
 .hero .btn {
   color: #ffffff;
   background-color: #2f3e46;
+}
+.hero .btn:hover {
+  background-color: #52796f;
+  color: #ffffff;
 }
 
 /* === end of section === */
@@ -180,12 +185,6 @@ nav .navbar-brand a {
 .about {
   padding: 3rem;
 }
-.about .line {
-  background-color: #2f3e46;
-  height: 0.2rem;
-  width: 6rem;
-  margin-bottom: 1rem;
-}
 .about .border-parent {
   position: relative;
   width: 224px;
@@ -224,6 +223,53 @@ nav .navbar-brand a {
   .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* === end of function === */
+/* === start of variable === */
+/* === end of variable === */
+/* === start of section === */
+.services {
+  padding: 3rem;
+  text-align: center;
+  background: #cad2c5;
+}
+.services .service {
+  padding: 3rem 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+  transition: all 0.3s linear;
+}
+.services .service:hover {
+  background-color: #354f52;
+  color: white;
+}
+.services .grid .line {
+  margin: auto;
+  margin-bottom: 1rem;
+  height: 0.12rem;
+  width: 4rem;
+}
+.services p {
+  padding-top: 1rem;
+}
+
+/* === end of section === */
+/* === start of function === */
+@media screen and (max-width: 1024px) {
+  .services .grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .services .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
   }
 }
 /* === end of function === */
