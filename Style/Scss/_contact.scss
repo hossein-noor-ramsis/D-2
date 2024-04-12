@@ -1,0 +1,80 @@
+/* === start of variable === */
+$clr-primary-1: #2f3e46;
+$clr-primary-2: #354f52;
+$clr-primary-3: #52796f;
+$clr-primary-4: #84a98c;
+$clr-primary-5: #cad2c5;
+$clr-grey-1: #102a42;
+$clr-grey-2: #617d98;
+$clr-grey-3: rgba(241, 245, 248);
+$clr-white: #ffffff;
+$transition: all 0.3s linear;
+$redius: 0.5rem;
+$shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+/* === end of variable === */
+/* === start of section === */
+.connect {
+    & {
+        // max-height: 40rem;
+        // width: 100%;
+        // background-color: red;
+        padding: 2rem 0rem;
+        height: 20rem;
+    }
+
+    .shapes {
+        position: relative;
+        height: 100%;
+    }
+    
+    .video {
+        clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%, 0% 10%);
+        object-fit: cover;
+        height: 120vh;
+        width: 100%;
+        opacity: 0.7;
+    }
+
+    .video-md {
+        object-fit: cover;
+        height: 90vh;
+        width: 100%;
+        opacity: 0.7;
+    }
+
+    .message-md {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        background-color: $clr-primary-4;
+        height: 120%;
+        width: 320px;
+        position: absolute;
+        top: 130%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .message {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        background-color: $clr-primary-4;
+        height: 400px;
+        width: 500px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2rem;
+        text-align: center;
+    }
+}
+
+/* === end of section === */
+/* === start of function === */
+@media screen and (min-width: 768px) {
+    .connect {
+        height: 120vh;
+    }
+}
+/* === end of function === */

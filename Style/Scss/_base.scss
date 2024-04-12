@@ -56,6 +56,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.btn {
+    color: $clr-white;
+    background-color: $clr-primary-1;
+}
+
+.btn:hover {
+    background-color: $clr-primary-3;
+    color: $clr-white;
+}
 /* === end of base === */
 /* === start of function === */
 

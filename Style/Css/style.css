@@ -30,6 +30,16 @@ body {
   align-items: center;
 }
 
+.btn {
+  color: #ffffff;
+  background-color: #2f3e46;
+}
+
+.btn:hover {
+  background-color: #52796f;
+  color: #ffffff;
+}
+
 /* === end of base === */
 /* === start of function === */
 /* === end of function === */
@@ -138,14 +148,6 @@ nav .navbar-brand a {
 }
 .hero .icons .bi:hover {
   color: #84a98c;
-}
-.hero .btn {
-  color: #ffffff;
-  background-color: #2f3e46;
-}
-.hero .btn:hover {
-  background-color: #52796f;
-  color: #ffffff;
 }
 
 /* === end of section === */
@@ -265,7 +267,7 @@ nav .navbar-brand a {
 
 /* === end of section === */
 /* === start of function === */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .services .grid {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -398,6 +400,68 @@ nav .navbar-brand a {
   }
   .projects .gp-4 img {
     grid-area: f;
+  }
+}
+/* === end of function === */
+/* === start of variable === */
+/* === end of variable === */
+/* === start of section === */
+.connect {
+  padding: 2rem 0rem;
+  height: 20rem;
+}
+.connect .shapes {
+  position: relative;
+  height: 100%;
+}
+.connect .video {
+  -webkit-clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%, 0% 10%);
+          clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%, 0% 10%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 120vh;
+  width: 100%;
+  opacity: 0.7;
+}
+.connect .video-md {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 90vh;
+  width: 100%;
+  opacity: 0.7;
+}
+.connect .message-md {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  background-color: #84a98c;
+  height: 120%;
+  width: 320px;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  text-align: center;
+}
+.connect .message {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  background-color: #84a98c;
+  height: 400px;
+  width: 500px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* === end of section === */
+/* === start of function === */
+@media screen and (min-width: 768px) {
+  .connect {
+    height: 120vh;
   }
 }
 /* === end of function === */
