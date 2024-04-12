@@ -49,6 +49,13 @@ body {
     width: 6rem;
     margin-bottom: 1rem;
 }
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* === end of base === */
 /* === start of function === */
 
