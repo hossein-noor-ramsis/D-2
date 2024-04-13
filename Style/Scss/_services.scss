@@ -32,6 +32,10 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
 
     .service:hover {
         background-color: $clr-primary-2;
+
+    }
+
+    .service:hover a {
         color: white;
     }
 

@@ -249,6 +249,8 @@ nav .navbar-brand a {
 }
 .services .service:hover {
   background-color: #354f52;
+}
+.services .service:hover a {
   color: white;
 }
 .services .grid .line {
@@ -587,7 +589,7 @@ nav .navbar-brand a {
   perspective: 1500px;
   position: relative;
   height: 24rem;
-  max-width: 350px;
+  max-width: 450px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -672,9 +674,6 @@ nav .navbar-brand a {
     grid-template-rows: repeat(3, 1fr);
     gap: 2rem;
   }
-  .card-main {
-    max-width: 350px;
-  }
 }
 @media screen and (min-width: 768px) {
   .blog .grid {
@@ -683,9 +682,6 @@ nav .navbar-brand a {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-  .card-main {
-    max-width: 450px !important;
-  }
 }
 @media screen and (min-width: 992px) {
   .blog .grid {
@@ -693,9 +689,6 @@ nav .navbar-brand a {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-  }
-  .card-main {
-    max-width: 350px !important;
   }
 }
 /* === end of function === */
