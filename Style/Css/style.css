@@ -613,7 +613,8 @@ nav .navbar-brand a {
   position: absolute;
   height: 100%;
   width: 100%;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   transition: 1.2s ease;
 }
 .blog .card-back h4 {
@@ -713,4 +714,4 @@ nav .navbar-brand a {
 
 /* === end of footer  === */
 /* === start of function === */
-/* === end of function === *//*# sourceMappingURL=style.css.map */
+/* === end of function === */
