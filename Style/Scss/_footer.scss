@@ -1,8 +1,45 @@
 /* === start of variable === */
-
+$clr-primary-1: #2f3e46;
+$clr-primary-2: #354f52;
+$clr-primary-3: #52796f;
+$clr-primary-4: #84a98c;
+$clr-primary-5: #cad2c5;
+$clr-grey-1:#102a42;
+$clr-grey-2: #617d98;
+$clr-grey-3: rgba(241, 245, 248);
+$clr-white: #ffffff;
+$transition: all 0.3s linear;
+$redius: 0.5rem;
+$shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
 /* === end of variable === */
 /* === start of footer === */
+.footer {
+    & {
+        background-color: $clr-grey-1;
+        padding: 1rem;
+    }
 
+    .footer-icons {
+        max-width: 350px;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    p {
+        padding-bottom: 2rem;
+        margin: 0rem;
+        text-align: center;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+    
+    a, p {       
+        color: $clr-white;
+    }
+}
 /* === end of footer  === */
 /* === start of function === */
 

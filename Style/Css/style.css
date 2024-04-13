@@ -579,7 +579,6 @@ nav .navbar-brand a {
 /* === start of section === */
 .blog {
   padding: 2rem;
-  margin: 3rem auto;
   background-color: rgb(241, 245, 248);
 }
 .blog .line {
@@ -691,6 +690,27 @@ nav .navbar-brand a {
 /* === start of variable === */
 /* === end of variable === */
 /* === start of footer === */
+.footer {
+  background-color: #102a42;
+  padding: 1rem;
+}
+.footer .footer-icons {
+  max-width: 350px;
+  margin: auto;
+  padding: 2rem;
+}
+.footer p {
+  padding-bottom: 2rem;
+  margin: 0rem;
+  text-align: center;
+}
+.footer a {
+  font-size: 1.5rem;
+}
+.footer a, .footer p {
+  color: #ffffff;
+}
+
 /* === end of footer  === */
 /* === start of function === */
 /* === end of function === *//*# sourceMappingURL=style.css.map */
