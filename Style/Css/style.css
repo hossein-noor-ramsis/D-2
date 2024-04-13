@@ -653,17 +653,7 @@ nav .navbar-brand a {
   border-radius: 100%;
 }
 .blog .btn {
-  background-color: #354f52;
-  background: linear-gradient(to left top, #2f3e46);
-  border: none;
-  transition: all 0.3s linear;
   margin: 1rem 3rem;
-}
-.blog .btn:active {
-  color: #ffffff;
-}
-.blog .btn:hover {
-  transform: scale(110%);
 }
 
 /* === end of section === */

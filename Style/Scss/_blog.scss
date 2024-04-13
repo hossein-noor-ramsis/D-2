@@ -104,19 +104,7 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
     .btn {
-        background-color: $clr-primary-2;
-        background: linear-gradient(to left top, $clr-primary-1);
-        border: none;
-        transition: $transition;
         margin: 1rem 3rem;
-    }
-
-    .btn:active {
-        color: $clr-white;
-    }
-
-    .btn:hover {
-        transform: scale(110%);
     }
 }
 /* === end of section === */
