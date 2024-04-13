@@ -16,10 +16,23 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
 /* === start of section === */
 .hero {
     & {
-        padding: 2rem;
-        padding-top: 6rem;
+        padding: 2rem 4rem;
+        padding-left: 3rem;
         height: 100vh;
         background-color: $clr-primary-5;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        // align-items: center;
+        justify-content: center;
+        // align-content: center;
+    }
+
+    .btn {
+        width: 8rem;
     }
 
     h1 {
@@ -52,29 +65,30 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
 
         .left {
             text-align: center;
-            margin: 0rem 2rem;
+            margin: 0rem;
         }
 
         .left img {
             position: relative;
             border-radius: 0.5rem;
-            width: 350px;
-            height: 500px;
+            width: 300px;
+            height: 450px;
             z-index: 2;
+            object-fit: cover;
         }
 
         .border-parent {
             position: relative;
-            width: 350px;
-            height: 500px;
+            // width: 300px;
+            // height: 450px;
         }
 
         .left .img-border {
             position: absolute;
             object-fit: cover;
             display: block;
-            width: 350px;
-            height: 500px;
+            width: 300px;
+            height: 450px;
             border: 0.25rem solid $clr-primary-2;
             border-radius: 0.5rem;
             top: 2rem;

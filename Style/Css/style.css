@@ -126,10 +126,18 @@ nav .navbar-brand a {
 /* === end of variable === */
 /* === start of section === */
 .hero {
-  padding: 2rem;
-  padding-top: 6rem;
+  padding: 2rem 4rem;
+  padding-left: 3rem;
   height: 100vh;
   background-color: #cad2c5;
+}
+.hero .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .btn {
+  width: 8rem;
 }
 .hero h1 {
   margin-bottom: 1rem;
@@ -156,27 +164,27 @@ nav .navbar-brand a {
   }
   .hero .left {
     text-align: center;
-    margin: 0rem 2rem;
+    margin: 0rem;
   }
   .hero .left img {
     position: relative;
     border-radius: 0.5rem;
-    width: 350px;
-    height: 500px;
+    width: 300px;
+    height: 450px;
     z-index: 2;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .hero .border-parent {
     position: relative;
-    width: 350px;
-    height: 500px;
   }
   .hero .left .img-border {
     position: absolute;
     -o-object-fit: cover;
        object-fit: cover;
     display: block;
-    width: 350px;
-    height: 500px;
+    width: 300px;
+    height: 450px;
     border: 0.25rem solid #354f52;
     border-radius: 0.5rem;
     top: 2rem;
@@ -316,7 +324,7 @@ nav .navbar-brand a {
   opacity: 0;
   color: #ffffff;
   z-index: 3;
-  padding: 2rem;
+  padding: 1rem;
   transition: all 0.3s linear;
 }
 .projects h6, .projects p {
@@ -613,8 +621,7 @@ nav .navbar-brand a {
   position: absolute;
   height: 100%;
   width: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: 1.2s ease;
 }
 .blog .card-back h4 {
@@ -714,4 +721,4 @@ nav .navbar-brand a {
 
 /* === end of footer  === */
 /* === start of function === */
-/* === end of function === */
+/* === end of function === *//*# sourceMappingURL=style.css.map */
