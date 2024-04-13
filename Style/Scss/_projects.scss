@@ -47,6 +47,17 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
         opacity: 0;
         color: $clr-white;
         z-index: 3;
+        padding: 2rem;
+        transition: $transition;
+    }
+
+    .p-center:hover h6, .p-center:hover p {
+        font-size: medium;
+    }
+
+    h6, p {
+        transition: $transition;
+        font-size: smaller;
     }
 
     .project:hover .p-center {

@@ -1,0 +1,68 @@
+/* === start of variable === */
+$clr-primary-1: #2f3e46;
+$clr-primary-2: #354f52;
+$clr-primary-3: #52796f;
+$clr-primary-4: #84a98c;
+$clr-primary-5: #cad2c5;
+$clr-grey-1:#102a42;
+$clr-grey-2: #617d98;
+$clr-grey-3: rgba(241, 245, 248);
+$clr-white: #ffffff;
+$transition: all 0.3s linear;
+$redius: 0.5rem;
+$shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+/* === end of variable === */
+/* === start of section === */
+.timeline {
+    & {
+        max-width: 80vw;
+        margin: 3rem auto;
+    }
+
+    .title {
+        padding-bottom: 3rem;
+    }
+    
+    .item {
+        position: relative;
+        max-width: 1024px;
+        margin: auto;
+        padding: 2rem;
+        border: 2px dashed $clr-primary-2;
+    }
+
+    .item:nth-child(even) {
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .item:nth-child(odd) {
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .item:nth-child(1) {
+        border-top: none;
+    }
+
+    .number-even, .number-odd {
+        position: absolute;
+        padding: 0.5rem 1rem;
+        border-radius: 100%;
+        background-color: $clr-primary-2;
+        color: $clr-white;
+    }
+
+    .number-even {
+        left: -1.4rem;
+    }
+
+    .number-odd {
+        right: -1.4rem;
+    }
+}
+/* === end of section === */
+/* === start of function === */
+
+/* === end of function === */ 

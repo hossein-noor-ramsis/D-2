@@ -52,7 +52,7 @@ header .sidebar-links {
   color: #354f52;
 }
 header .nav-link:hover, header .sidebar-icons .bi:hover {
-  color: #84a98c;
+  color: #52796f;
 }
 
 nav {
@@ -147,7 +147,7 @@ nav .navbar-brand a {
   transition: all 0.3s linear;
 }
 .hero .icons .bi:hover {
-  color: #84a98c;
+  color: #52796f;
 }
 
 /* === end of section === */
@@ -264,6 +264,10 @@ nav .navbar-brand a {
 .services p {
   padding-top: 1rem;
 }
+.services a {
+  color: black;
+  text-decoration: none;
+}
 
 /* === end of section === */
 /* === start of function === */
@@ -314,6 +318,15 @@ nav .navbar-brand a {
   opacity: 0;
   color: #ffffff;
   z-index: 3;
+  padding: 2rem;
+  transition: all 0.3s linear;
+}
+.projects .p-center:hover h6, .projects .p-center:hover p {
+  font-size: medium;
+}
+.projects h6, .projects p {
+  transition: all 0.3s linear;
+  font-size: smaller;
 }
 .projects .project:hover .p-center {
   opacity: 1;
@@ -517,6 +530,51 @@ nav .navbar-brand a {
     gap: 3rem;
   }
 }
+/* === end of function === */
+/* === start of variable === */
+/* === end of variable === */
+/* === start of section === */
+.timeline {
+  max-width: 80vw;
+  margin: 3rem auto;
+}
+.timeline .title {
+  padding-bottom: 3rem;
+}
+.timeline .item {
+  position: relative;
+  max-width: 1024px;
+  margin: auto;
+  padding: 2rem;
+  border: 2px dashed #354f52;
+}
+.timeline .item:nth-child(even) {
+  border-left: none;
+  border-bottom: none;
+}
+.timeline .item:nth-child(odd) {
+  border-right: none;
+  border-bottom: none;
+}
+.timeline .item:nth-child(1) {
+  border-top: none;
+}
+.timeline .number-even, .timeline .number-odd {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  border-radius: 100%;
+  background-color: #354f52;
+  color: #ffffff;
+}
+.timeline .number-even {
+  left: -1.4rem;
+}
+.timeline .number-odd {
+  right: -1.4rem;
+}
+
+/* === end of section === */
+/* === start of function === */
 /* === end of function === */
 /* === start of variable === */
 /* === end of variable === */
