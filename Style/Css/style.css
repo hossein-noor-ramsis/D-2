@@ -407,8 +407,8 @@ nav .navbar-brand a {
 /* === end of variable === */
 /* === start of section === */
 .connect {
-  padding: 2rem 0rem;
-  height: 20rem;
+  padding: 3rem 0rem;
+  height: 110vh;
 }
 .connect .shapes {
   position: relative;
@@ -419,14 +419,14 @@ nav .navbar-brand a {
           clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%, 0% 10%);
   -o-object-fit: cover;
      object-fit: cover;
-  height: 120vh;
+  height: 100%;
   width: 100%;
   opacity: 0.7;
 }
 .connect .video-md {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 90vh;
+  height: 100%;
   width: 100%;
   opacity: 0.7;
 }
@@ -434,10 +434,10 @@ nav .navbar-brand a {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   background-color: #84a98c;
-  height: 120%;
+  height: 300px;
   width: 320px;
   position: absolute;
-  top: 130%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem;
@@ -447,10 +447,10 @@ nav .navbar-brand a {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   background-color: #84a98c;
-  height: 400px;
+  height: 420px;
   width: 500px;
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem;
@@ -461,7 +461,60 @@ nav .navbar-brand a {
 /* === start of function === */
 @media screen and (min-width: 768px) {
   .connect {
-    height: 120vh;
+    height: 130vh;
+  }
+}
+/* === end of function === */
+/* === start of variable === */
+/* === end of variable === */
+/* === start of section === */
+.skils {
+  margin: 3rem auto;
+  padding: 3rem 3rem;
+  background-color: #84a98c;
+}
+.skils h4 {
+  padding-bottom: 1rem;
+}
+.skils h6 {
+  margin-top: 1rem;
+}
+.skils .progress-bar {
+  background-color: #354f52;
+}
+.skils .html {
+  width: 95%;
+}
+.skils .css {
+  width: 85%;
+}
+.skils .js {
+  width: 90%;
+}
+.skils .node {
+  width: 75%;
+}
+.skils .python {
+  width: 50%;
+}
+.skils .java {
+  width: 65%;
+}
+
+/* === end of section === */
+/* === start of function === */
+@media screen and (max-width: 768px) {
+  .skils .grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .skils .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
 }
 /* === end of function === */

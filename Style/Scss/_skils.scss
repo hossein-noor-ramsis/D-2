@@ -1,0 +1,77 @@
+/* === start of variable === */
+$clr-primary-1: #2f3e46;
+$clr-primary-2: #354f52;
+$clr-primary-3: #52796f;
+$clr-primary-4: #84a98c;
+$clr-primary-5: #cad2c5;
+$clr-grey-1:#102a42;
+$clr-grey-2: #617d98;
+$clr-grey-3: rgba(241, 245, 248);
+$clr-white: #ffffff;
+$transition: all 0.3s linear;
+$redius: 0.5rem;
+$shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+/* === end of variable === */
+/* === start of section === */
+.skils {
+    & {
+        margin: 3rem auto;
+        padding: 3rem 3rem;
+        background-color: $clr-primary-4;
+    }
+
+    h4 {
+        padding-bottom: 1rem;
+    }
+
+    h6 {
+        margin-top: 1rem;
+    }
+
+    .progress-bar {
+        background-color: $clr-primary-2;
+    }
+
+    .html {
+        width: 95%;
+    }
+
+    .css {
+        width: 85%;
+    }
+
+    .js {
+        width: 90%;
+    }
+
+    .node {
+        width: 75%;
+    }
+
+    .python {
+        width: 50%;
+    }
+
+    .java {
+        width: 65%;
+    }
+}
+/* === end of section === */
+/* === start of function === */
+@media screen and (max-width: 768px) {
+    .skils .grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .skils .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+/* === end of function === */ 
