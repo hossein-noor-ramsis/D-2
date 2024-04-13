@@ -16,7 +16,7 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
 /* === start of section === */
 .services {
     & {
-        padding: 3rem;
+        padding: 2rem;
         text-align: center;
         background: $clr-primary-5;
     }
@@ -57,7 +57,7 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
     .services .grid {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
-        gap: 3rem;
+        gap: 2rem;
     }
 
 }
@@ -66,7 +66,7 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
     .services .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
+        gap: 2rem;
     } 
 }
 /* === end of function === */ 

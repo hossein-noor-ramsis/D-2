@@ -16,19 +16,19 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
 /* === start of section === */
 .about {
     & {
-        padding: 3rem;
+        padding: 2rem;
     }
 
     .border-parent {
         position: relative;
-        width: 224px;
+        width: 240px;
         height: 382px;
     }
 
     .img-border {
         position: absolute;
         display: block;
-        width: 192px;
+        width: 208px;
         height: 350px;
         border: 0.25rem solid $clr-primary-2;
         border-radius: 0.5rem;
@@ -40,7 +40,7 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
         position: relative;
         object-fit: cover;
         border-radius: 0.5rem;
-        width: 192px;
+        width: 208px;
         height: 350px;
         margin-right: 3rem;
         z-index: 2;

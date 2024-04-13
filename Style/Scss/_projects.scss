@@ -16,7 +16,7 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
 /* === start of section === */
 .projects {
     & {
-        padding: 3rem;
+        padding: 2rem;
     }
 
     p {
@@ -51,13 +51,13 @@ $shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
         transition: $transition;
     }
 
-    .p-center:hover h6, .p-center:hover p {
+    h6, p {
+        transition: $transition;
         font-size: medium;
     }
 
-    h6, p {
-        transition: $transition;
-        font-size: smaller;
+    .p-center:hover h6, .p-center:hover p {
+        font-size: large;
     }
 
     .project:hover .p-center {

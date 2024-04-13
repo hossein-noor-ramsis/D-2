@@ -28,14 +28,15 @@ header {
 
 nav {
     & {
-        position: absolute;
+        position: fixed;
         width: 100%;
-        top: 0rem;
+        top: 0%;
         left: 0%;
         right: 0%;
         background-color: $clr-primary-5;
         transition: $transition;
         z-index: 5;
+        padding: 1rem 2rem !important;
     }
 
     .nav-btn .bi::before {
@@ -56,11 +57,6 @@ nav {
 }
 
 .nav-fixed {
-    position: fixed;
-    width: 100%;
-    top: 0rem;
-    left: 0%;
-    right: 0%;
     box-shadow: $shadow-light;
     background: $clr-white;
 }
